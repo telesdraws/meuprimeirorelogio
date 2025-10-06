@@ -3,7 +3,7 @@ from time import strftime
 
 # função para atualizar o relógio
 def atualizar_relogio():
-    horario_atual = strftime("%H:%M:%S %p")
+    horario_atual = strftime("%H:%M:%S")
     rotulo_relogio.config(text=horario_atual)
     rotulo_relogio.after(1000, atualizar_relogio)
 
